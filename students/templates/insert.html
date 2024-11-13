@@ -11,14 +11,14 @@
                 <h3>Register students</h3>
                 <div class="col-md-6">
 
-                    <form action="" method="post" enctype="multipart/form-data">
+                    <form action="/insert_data/" method="post" enctype="multipart/form-data">
                         {% csrf_token %}
 
                         <input name="name" type="text" placeholder="Name" class="form-control" required><br>
                         <input name="email" type="text" placeholder="Email" class="form-control" required><br>
                         <input name="age" type="text" placeholder="Age" class="form-control" required><br>
                         <input name="phone" type="text" placeholder="Phone" class="form-control" required><br>
-                        <input name="image" type="text" class="form-control" required><br>
+                        <input name="image" type="file" class="form-control" required><br>
                         <input type="submit" value="save" class="btn btn-success"><br>
 
                     </form>
